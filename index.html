@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lillies Dynamic Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="#about-me">About Me</a></li>
+      <li><a href="#multimedia-showcase">Multimedia Showcasing</a></li>
+      <li><a href="#portfolio-list">Portfolio List</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><button id="themeToggle">Toggle Theme</button></li>
+    </ul>
+  </nav>
+
+  <div class="main-container">
+    <header>
+      <div class="image-container">
+  <img src="firstpic.jpg" alt="Profile Image" />
+</div>
+      <h2>Hello, I'm Lilly ✨</h2>
+      <p>Content Creator • Dancer • Techie • Influencer</p>
+    </header>
+  </div>
+
+  <main>
+    <section id="about-me">
+      <h2>About Me</h2>
+      <p>
+        My name is <b>Akins-Akindunni Yoyinsola Lilly</b> but people just call me <b>Lilly</b>.
+        I am astudent of <b>Caleb university</b> with matric no <b>24/15016</b>.
+        I was born into a family of 3 with two elder siblings: <b>Emmanuella and Emmanuel Akins</b>.
+        I'm someone who loves learning new things, especially about how the world works.
+        I'm playful, creative, and sometimes a bit of a perfectionist.
+        I enjoy making people laugh, and I'm always down for deep conversations or fun adventures with like-minded people.
+        But more than anything, I love to <b>Dance</b> and hope to be a famous dancer someday.
+      </p>
+    </section>
+
+    <section id="multimedia-showcase">
+      <h2>Multimedia Showcase</h2>
+      <h3>My Audio Greeting:</h3>
+      <audio controls>
+        <source src="Dynamic website sound .mp3" type="audio/mp3">
+      </audio>
+
+      <h3>Soft Tunes to Enjoy:</h3>
+      <audio controls>
+        <source src="light-instrumental-melody-313329.mp3" type="audio/mp3">
+      </audio>
+    </section>
+
+    <section id="portfolio-list">
+      <h2>My Projects</h2>
+      <div id="projects-container">
+        <div class="project-card">
+          <h3>Beauty Tips: Glowing Skin Routine</h3>
+          <p>Learn my daily skincare routine that keeps my skin glowing and healthy.</p>
+          <video controls width="320" height="180" preload="metadata">
+          <source src="Lilies_Lifestyle🌸_7451951896912301317-no-watermark.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="project-card">
+          <h3>Lifestyle: SIMPLE MAKEUP TUTORIAL</h3>
+          <p>A quick video sharing my favorite simple makeup tutorial.</p>
+          <video controls width="320" height="180" preload="metadata">
+          <source src="Lilies_Lifestyle🌸_7449497685549206790-no-watermark (1).mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="project-card">
+          <h3>SIMPLE Outfit of the day</h3>
+          <p>Showing a little outfit inspo with boots.</p>
+          <video controls width="320" height="180" preload="metadata">
+            <source src="Lilies_7504014637420088582-no-watermark.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="project-card">
+          <h3>Hair Inspo</h3>
+          <p>Ever been stuck? Don't know what to do to your hair? <b>WATCH THIS</b></p>
+          <video controls width="320" height="180" preload="metadata">
+            <source src="Lilies_7505059469810748727-no-watermark.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="project-card">
+          <h3>SIMPLE DAY IN MY LIFE</h3>
+          <p>A clip of my day in university — watch this.</p>
+          <video controls width="320" height="180" preload="metadata">
+            <source src="Lilies_7510308612221242629-no-watermark.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>My Skills</h2>
+        <div class="skill-card">
+          <div class="skill-buttons">
+            <button class="skill-btn" data-desc="I specialize in hip-hop and freestyle dancing with expressive movement and rhythm.">Dancing</button>
+            <button class="skill-btn" data-desc="Proficient in editing tools like CapCut and InShot to produce engaging short-form videos.">Video Editing</button>
+            <button class="skill-btn" data-desc="Creative ideation, filming, and presenting content across lifestyle, beauty, and dance niches.">Content Creation</button>
+            <button class="skill-btn" data-desc="Experienced in scripting, journaling, storytelling, and blog-style writing for lifestyle topics.">Writing</button>
+            <button class="skill-btn" data-desc="Confident in speaking and presenting in front of cameras and live audiences.">Public Speaking</button>
+            <button class="skill-btn" data-desc="Skilled in curating visual style, colors, and tone for social media and digital content.">Branding & Aesthetic</button>
+          </div>
+          <p id="skill-description" style="margin-top: 10px; font-style: italic; min-height: 24px;"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Lilly | All Rights Reserved</p>
+  </footer>
+
+  <button id="scrollToTopBtn" title="Back to Top">⬆️</button>
+  <script src="script.js"></script>
+</body>
+</html>

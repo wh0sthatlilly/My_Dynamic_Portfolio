@@ -1,0 +1,234 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding-bottom: 50px;
+  background-color: #FFF0F6;
+  color: #2D2D2D;
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #1A1A1A;
+  color: #eee;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background: linear-gradient(90deg, #ff6ec4, #7873f5, #4ade80);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav h1 {
+  color: white;
+  font-weight: 900;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  margin: 0;
+  user-select: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 8px 12px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #fffcf9;
+  box-shadow: 0 0 10px #ff6ec4, 0 0 15px #7873f5;
+  outline: none;
+  cursor: pointer;
+}
+
+header {
+  background-color: white;
+  color: #2D2D2D;
+  text-align: center;
+  padding: 30px 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 5px solid #FF4DA6;
+}
+.image-container:hover img {
+  transform: scale(1.1);
+  filter: brightness(80%);
+}
+.image-container img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+main {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+section {
+  background-color: #fff;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(255, 77, 166, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.dark-mode section {
+  background-color: #333;
+}
+
+h1, h2, h3 {
+  color: #FF4DA6;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+  color: #A259FF;
+}
+
+.skill-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.skill-btn {
+  background: linear-gradient(45deg, #FF4DA6, #A259FF);
+  color: white;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.skill-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.skill-btn.active {
+  background-color: #ff4081;
+  color: white;
+  box-shadow: 0 0 8px #ff4081;
+  transform: translateY(-3px);
+}
+
+#skill-description {
+  margin-top: 15px;
+  font-style: italic;
+  min-height: 20px;
+}
+
+
+.project-card {
+  background-color: #FFF8FC;
+  border: 1px solid #FFC0CB;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(255, 105, 180, 0.2);
+}
+
+.project-card h3 {
+  color: #A259FF;
+  margin-top: 0;
+}
+
+body.dark-mode .project-card {
+  background-color: #444;
+  border-color: #555;
+}
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  display: none;
+  background-color: #ff4081;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: background-color 0.3s;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #d81b60;
+}
+
+#themeToggle {
+  background-color: #FFD700;
+  color: #2D2D2D;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+#themeToggle:hover {
+  background-color: #FFC300;
+}
+
+.hidden-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.show-section {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to right, #FF4DA6, #A259FF);
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+}
